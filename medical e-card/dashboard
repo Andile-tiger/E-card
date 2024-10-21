@@ -1,0 +1,32 @@
+import javafx.application.Application;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+
+public class DashboardApp extends Application {
+    @Override
+    public void start(Stage primaryStage) {
+        // Create a scene
+        Scene scene = new Scene(createDashboardLayout(), 800, 600);
+
+        // Set the scene on the stage
+        primaryStage.setScene(scene);
+
+        // Set the stage title and show it
+        primaryStage.setTitle("Dashboard");
+        primaryStage.show();
+    }
+
+    private static BorderPane createDashboardLayout() {
+        // Create the layout for your dashboard components
+        BorderPane layout = new BorderPane();
+
+        // Add components to the layout (e.g., charts, tables, labels)
+        // ...
+
+        return layout;
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
